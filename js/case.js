@@ -1,11 +1,9 @@
 var Case = Class.extend({
-    player: null,
-    init: function (obstacle, gomette) {
-        this.obstacle = obstacle;
-        this.gomette = gomette;
+    entity: null,
+    init: function (entity) {
+        this.entity = entity;
     },
-    setPlayer: function (player) {
-        this.player = player;
-        this.gomette = null;
+    setEntity: function (entity) {
+        this.entity = entity;
     }
 });
