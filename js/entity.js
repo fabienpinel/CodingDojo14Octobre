@@ -10,3 +10,9 @@ var Entity = Class.extend({
        this.type=type;
    }
 });
+
+var Player = Entity.extend({
+    init: function(x, y) {
+        this._super(x,y, 3);
+    }
+})
